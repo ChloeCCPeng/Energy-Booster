@@ -1,0 +1,14 @@
+{
+    "quotes": [
+      {
+        "id": 1,
+        "type": "kanye",
+        "text": "something narcissistic"
+      },
+      {
+          "id": 2,
+          "type": "inspiration",
+          "text": "something cheese"
+      }
+    ]
+}
