@@ -45,7 +45,7 @@ function App() {
       body: JSON.stringify(joke)
     })
     .then((response) => response.json())
-    .then((joke) => setSavedQuotes([...savedJokes,joke]))
+    .then((joke) => setSavedJokes([...savedJokes,joke]))
   }
 
   function deleteQuote(id) {
