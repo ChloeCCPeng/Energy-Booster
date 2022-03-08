@@ -16,13 +16,17 @@ function InputQuote({saveQuote}) {
     return (
         <form onSubmit={(e) => submitHelper(e)} >
             <label>Submit a quote to be saved to your quote list: </label>
+            <br></br>
             <label>Type: 
                 <input type="text" name="type" onChange={(e) => updateForm(e)} />
             </label>
             <label>Quote: 
                 <input type="text" name="text" onChange={(e) => updateForm(e)} />
             </label>
-            <input type="submit" value="Submit" />
+            <label>Author: 
+                <input type="text" name="text" onChange={(e) => updateForm(e)} />
+            </label>
+            <input class="bouncy" type="submit" value="Submit" />
         </form>
     )
 }

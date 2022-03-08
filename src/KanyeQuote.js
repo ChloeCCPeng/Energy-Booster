@@ -12,7 +12,7 @@ function KanyeQuote({saveQuote}) {
     return (
         <div>
             {kanyeQuote}
-            <button onClick={()=>saveQuote(kanyeQuote,"kanye")}>Save</button>
+            <button class="bouncy" onClick={()=>saveQuote(kanyeQuote,"kanye")}>Save</button>
         </div>
     )
 }
