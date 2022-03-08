@@ -1,16 +1,26 @@
-import React from "react";
+import React, {useState} from "react";
 
-function InputQuote() {
-    function submitPlaceholder(e) {
+function InputQuote({saveQuote}) {
+    const [formState, setFormState] = useState({});
+    function submitHelper(e) {
         e.preventDefault();
-        console.log("tots gonna do something with your quote!");
+        saveQuote(formState.text, formState.type);
+    }
+
+    function updateForm(e) {
+        console.log(e.target.value)
+        const formData = {...formState,[e.target.name]: e.target.value};
+        setFormState(formData);
     }
 
     return (
-        <form onSubmit={submitPlaceholder} >
+        <form onSubmit={(e) => submitHelper(e)} >
             <label>Submit a quote to be saved to your quote list: </label>
-            <label>Quote
-                <input type="text" name="quote" />
+            <label>Type: 
+                <input type="text" name="type" onChange={(e) => updateForm(e)} />
+            </label>
+            <label>Quote: 
+                <input type="text" name="text" onChange={(e) => updateForm(e)} />
             </label>
             <input type="submit" value="Submit" />
         </form>

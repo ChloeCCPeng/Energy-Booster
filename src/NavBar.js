@@ -7,7 +7,7 @@ function NavBar() {
             <NavLink exact to="/" activeStyle={{background: "gray"}} >
                 Home
             </NavLink>
-            <NavLink exact to="/getinspired" activeStyle={{background: "gray"}} >
+            <NavLink exact to="/inspirationalquote" activeStyle={{background: "gray"}} >
                 Get Inspired
             </NavLink>
             <NavLink exact to="/kanyequote" activeStyle={{background: "gray"}} >
