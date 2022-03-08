@@ -22,6 +22,9 @@ function InputQuote({saveQuote}) {
             <label>Quote: 
                 <input type="text" name="text" onChange={(e) => updateForm(e)} />
             </label>
+            <label>Author: 
+                <input type="text" name="text" onChange={(e) => updateForm(e)} />
+            </label>
             <input type="submit" value="Submit" />
         </form>
     )
