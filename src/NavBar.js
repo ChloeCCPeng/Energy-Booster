@@ -10,6 +10,9 @@ function NavBar() {
             <NavLink exact to="/inspirationalquote" activeStyle={{background: "gray"}} >
                 Get Inspired
             </NavLink>
+            <NavLink exact to="/getjokes" activeStyle={{background: "gray"}} >
+                Get Jokes
+            </NavLink>
             <NavLink exact to="/kanyequote" activeStyle={{background: "gray"}} >
                 WWKanyeDo
             </NavLink>

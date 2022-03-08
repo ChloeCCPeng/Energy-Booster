@@ -19,6 +19,43 @@
       "text": "something, something, something",
       "type": "test",
       "id": 8
+    },
+    {
+      "text": "something, something, something",
+      "type": "test 2",
+      "id": 9
+    },
+    {
+      "text": "I give up drinking every week",
+      "type": "kanye",
+      "id": 10
+    },
+    {
+      "text": "We will cure hunger",
+      "type": "kanye",
+      "id": 11
+    },
+    {
+      "text": "People tried to talk me out of running for President. Never let weak controlling people kill your spirit",
+      "type": "kanye",
+      "id": 12
+    }
+  ],
+  "jokes": [
+    {
+      "question": "What did the process say after working in an infinite loop all day?",
+      "punchline": "I need a break.",
+      "id": 2
+    },
+    {
+      "question": "What are your plans for the weekend?",
+      "punchline": "I know Front-end and Back-end, what is week-end?",
+      "id": 3
+    },
+    {
+      "question": "Got any funny DNS jokes?",
+      "punchline": "Yeah, but It may take 24 hours to get it.",
+      "id": 4
     }
   ]
 }
