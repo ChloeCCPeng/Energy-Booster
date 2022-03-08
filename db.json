@@ -1,14 +1,24 @@
 {
-    "quotes": [
-      {
-        "id": 1,
-        "type": "kanye",
-        "text": "something narcissistic"
-      },
-      {
-          "id": 2,
-          "type": "inspiration",
-          "text": "something cheese"
-      }
-    ]
+  "quotes": [
+    {
+      "text": "I care. I care about everything. Sometimes not giving a f#%k is caring the most.",
+      "type": "kanye",
+      "id": 3
+    },
+    {
+      "text": "I hate when I'm on a flight and I wake up with a water bottle next to me like oh great now I gotta be responsible for this water bottle",
+      "type": "kanye",
+      "id": 4
+    },
+    {
+      "text": "We came into a broken world. And we're the cleanup crew.",
+      "type": "kanye",
+      "id": 6
+    },
+    {
+      "text": "something, something, something",
+      "type": "test",
+      "id": 8
+    }
+  ]
 }
