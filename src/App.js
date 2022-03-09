@@ -27,8 +27,8 @@ function App() {
     .then((data) => setSavedJokes(data))
   },[]);
 
-  function saveQuote(text, type) {
-    const obj = {text: text, type: type};
+  function saveQuote(text, author) {
+    const obj = {text: text, author: author};
     fetch('http://localhost:4000/quotes', {
       method: 'POST',
       headers: {'Content-type': 'application/json'},
@@ -38,7 +38,8 @@ function App() {
     .then((quote) => setSavedQuotes([...savedQuotes,quote]))
   }
 
-  function saveJoke(joke) {
+  function saveJoke(question, punchline) {
+    const joke = {question: question, punchline: punchline};
     fetch('http://localhost:4000/jokes', {
       method: 'POST',
       headers: {'Content-type': 'application/json'},
@@ -87,10 +88,10 @@ function App() {
           <KanyeQuote saveQuote={saveQuote} />
         </Route>
         <Route exact path="/inspirationalquote">
-          <InspirationalQuote />
+          <InspirationalQuote saveQuote={saveQuote} />
         </Route>
         <Route exact path="/inputquote">
-          <InputQuote saveQuote={saveQuote} />
+          <InputQuote saveJoke={saveJoke} saveQuote={saveQuote} />
         </Route>
       </Switch>
     </div>

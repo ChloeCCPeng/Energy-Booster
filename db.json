@@ -1,74 +1,39 @@
 {
   "quotes": [
     {
-      "text": "I care. I care about everything. Sometimes not giving a f#%k is caring the most.",
-      "type": "kanye",
-      "id": 3
-    },
-    {
       "text": "I hate when I'm on a flight and I wake up with a water bottle next to me like oh great now I gotta be responsible for this water bottle",
-      "type": "kanye",
+      "author": "kanye",
       "id": 4
     },
     {
       "text": "We came into a broken world. And we're the cleanup crew.",
-      "type": "kanye",
+      "author": "kanye",
       "id": 6
     },
     {
-      "text": "something, something, something",
-      "type": "test",
-      "id": 8
-    },
-    {
-      "text": "something, something, something",
-      "type": "test 2",
-      "id": 9
-    },
-    {
       "text": "I give up drinking every week",
-      "type": "kanye",
+      "author": "kanye",
       "id": 10
     },
     {
-      "text": "We will cure hunger",
-      "type": "kanye",
-      "id": 11
-    },
-    {
       "text": "People tried to talk me out of running for President. Never let weak controlling people kill your spirit",
-      "type": "kanye",
+      "author": "kanye",
       "id": 12
     },
     {
-      "text": "Keep your nose out the sky, keep your heart to god, and keep your face to the rising sun.",
-      "type": "kanye",
+      "text": "We see things not as they are, but as we are. Our perception is shaped by our previous experiences.",
+      "author": "Dennis Kimbro",
       "id": 13
     },
     {
-      "text": "Keep your nose out the sky, keep your heart to god, and keep your face to the rising sun.",
-      "type": "kanye",
+      "text": "All truths are easy to understand once they are discovered; the point is to discover them.",
+      "author": "Galileo Galilei",
       "id": 14
     },
     {
-      "text": "I really love my Tesla. I'm in the future. Thank you Elon.",
-      "type": "kanye",
+      "text": "gonna quote myself like a narcissist",
+      "author": "Molly",
       "id": 15
-    },
-    {
-      "text": "Everything you do in life stems from either fear or love",
-      "type": "kanye",
-      "id": 16
-    },
-    {
-      "text": "There's so many lonely emojis man",
-      "type": "kanye",
-      "id": 17
-    },
-    {
-      "text": "There's so many lonely emojis man",
-      "type": "kanye",
-      "id": 18
     }
   ],
   "jokes": [
@@ -111,6 +76,31 @@
       "question": "An agent died unexpectedly. How was the crime solved?",
       "punchline": "By looking at the stack trace.",
       "id": 9
+    },
+    {
+      "question": "Waitress: Do you have any questions about the menu?",
+      "punchline": "Dev: What kind of font it is?",
+      "id": 10
+    },
+    {
+      "question": "What are your plans for the weekend?",
+      "punchline": "I know Front-end and Back-end, what is week-end?",
+      "id": 11
+    },
+    {
+      "question": "What accomodations did the JavaScript developer request at the hotel?",
+      "punchline": "A room with a Vue.",
+      "id": 12
+    },
+    {
+      "question": "what did the dev say to the other dev",
+      "punchline": "help.",
+      "id": 13
+    },
+    {
+      "question": "more jokes",
+      "punchline": "but not more laughs",
+      "id": 15
     }
   ]
 }
