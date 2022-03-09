@@ -3,18 +3,28 @@ import './App.css';
 import React, {useState, useEffect} from 'react';
 import { Route, Switch } from 'react-router-dom';
 
+import DevJoke from './DevJoke';
 import InputQuote from './InputQuote';
 import InspirationalQuote from './InspirationalQuote';
+import JokeList from './JokeList';
 import KanyeQuote from './KanyeQuote';
 import NavBar from './NavBar';
 import QuoteList from './QuoteList';
 
 function App() {
   const [savedQuotes, setSavedQuotes] = useState([]);
+  const [savedJokes, setSavedJokes] = useState([]);
+
   useEffect(() => {
     fetch('http://localhost:4000/quotes')
     .then((response) => response.json())
     .then((data) => setSavedQuotes(data))
+  },[]);
+
+  useEffect(() => {
+    fetch('http://localhost:4000/jokes')
+    .then((response) => response.json())
+    .then((data) => setSavedJokes(data))
   },[]);
 
   function saveQuote(text, type) {
@@ -26,6 +36,16 @@ function App() {
     })
     .then((response) => response.json())
     .then((quote) => setSavedQuotes([...savedQuotes,quote]))
+  }
+
+  function saveJoke(joke) {
+    fetch('http://localhost:4000/jokes', {
+      method: 'POST',
+      headers: {'Content-type': 'application/json'},
+      body: JSON.stringify(joke)
+    })
+    .then((response) => response.json())
+    .then((joke) => setSavedJokes([...savedJokes,joke]))
   }
 
   function deleteQuote(id) {
@@ -40,12 +60,28 @@ function App() {
     })
   }
 
+  function deleteJoke(id) {
+    fetch(`http://localhost:4000/jokes/${id}`, {
+      method: 'DELETE',
+      headers: {'Content-Type': 'application/json'}
+    })
+    .then((response) => response.json())
+    .then(() => {
+      const updatedJokes = savedJokes.filter((joke) => joke.id !== id);
+      setSavedJokes(updatedJokes);
+    })
+  }
+
   return (
     <div className="App">
       <NavBar />
       <Switch>
         <Route exact path="/">
           <QuoteList savedQuotes={savedQuotes} deleteQuote={deleteQuote} />
+          <JokeList savedJokes={savedJokes} deleteJoke={deleteJoke} />
+        </Route>
+        <Route exact path="/getjokes">
+          <DevJoke saveJoke={saveJoke} />
         </Route>
         <Route exact path="/kanyequote">
           <KanyeQuote saveQuote={saveQuote} />

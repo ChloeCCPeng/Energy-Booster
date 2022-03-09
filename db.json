@@ -21,12 +21,96 @@
       "id": 8
     },
     {
+      "text": "something, something, something",
+      "type": "test 2",
       "id": 9
     },
     {
-      "text": "I hear people say this person is cool and this person is not cool. People are cool. Man has never invented anything as awesome as a an actual person but sometimes we value the objects we create over life itself",
+      "text": "I give up drinking every week",
       "type": "kanye",
       "id": 10
+    },
+    {
+      "text": "We will cure hunger",
+      "type": "kanye",
+      "id": 11
+    },
+    {
+      "text": "People tried to talk me out of running for President. Never let weak controlling people kill your spirit",
+      "type": "kanye",
+      "id": 12
+    },
+    {
+      "text": "Keep your nose out the sky, keep your heart to god, and keep your face to the rising sun.",
+      "type": "kanye",
+      "id": 13
+    },
+    {
+      "text": "Keep your nose out the sky, keep your heart to god, and keep your face to the rising sun.",
+      "type": "kanye",
+      "id": 14
+    },
+    {
+      "text": "I really love my Tesla. I'm in the future. Thank you Elon.",
+      "type": "kanye",
+      "id": 15
+    },
+    {
+      "text": "Everything you do in life stems from either fear or love",
+      "type": "kanye",
+      "id": 16
+    },
+    {
+      "text": "There's so many lonely emojis man",
+      "type": "kanye",
+      "id": 17
+    },
+    {
+      "text": "There's so many lonely emojis man",
+      "type": "kanye",
+      "id": 18
+    }
+  ],
+  "jokes": [
+    {
+      "question": "What did the process say after working in an infinite loop all day?",
+      "punchline": "I need a break.",
+      "id": 2
+    },
+    {
+      "question": "What are your plans for the weekend?",
+      "punchline": "I know Front-end and Back-end, what is week-end?",
+      "id": 3
+    },
+    {
+      "question": "Got any funny DNS jokes?",
+      "punchline": "Yeah, but It may take 24 hours to get it.",
+      "id": 4
+    },
+    {
+      "question": "How many developers does it take to change a light bulb?",
+      "punchline": "None. It's a hardware issue.",
+      "id": 5
+    },
+    {
+      "question": "Why do programmers prefer dark mode?",
+      "punchline": "Because light attracts bugs.",
+      "id": 6
+    },
+    {
+      "question": "What do you call a doctor who fixes websites?",
+      "punchline": "A URLogist",
+      "id": 7
+    },
+    {
+      "question": "Why couldn't web developer find their room in a hotel?",
+      "punchline": "Because their room number was 404.",
+      "id": 8
+    },
+    {
+      "question": "An agent died unexpectedly. How was the crime solved?",
+      "punchline": "By looking at the stack trace.",
+      "id": 9
     }
   ]
 }
