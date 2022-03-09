@@ -1,10 +1,16 @@
 import React, {useState} from "react";
 
-function InputQuote({saveQuote}) {
-    const [formState, setFormState] = useState({});
+function InputQuote({saveQuote, saveJoke}) {
+    const [formState, setFormState] = useState({category: "joke", text1: "", text2: ""});
     function submitHelper(e) {
         e.preventDefault();
-        saveQuote(formState.text, formState.type);
+        if (formState.category==="joke") {
+            saveJoke(formState.text1, formState.text2);
+        } else {
+            saveQuote(formState.text1, formState.text2);
+        }
+        setFormState({category: "joke", text1: "", text2: ""});
+        e.target.reset();
     }
 
     function updateForm(e) {
@@ -15,18 +21,21 @@ function InputQuote({saveQuote}) {
 
     return (
         <form onSubmit={(e) => submitHelper(e)} >
-            <label>Submit a quote to be saved to your quote list: </label>
+            <label>Submit a quote or joke: </label>
             <br></br>
             <label>Type: 
-                <input type="text" name="type" onChange={(e) => updateForm(e)} />
+                <select name="category" onChange={(e) => updateForm(e)}>
+                    <option value="joke">Joke</option>
+                    <option value="quote">Quote</option>
+                </select>
             </label>
-            <label>Quote: 
-                <input type="text" name="text" onChange={(e) => updateForm(e)} />
+            <label>{formState.category==="quote" ? "Quote: " : "Setup: "}
+                <input type="text" name="text1" onChange={(e) => updateForm(e)} />
             </label>
-            <label>Author: 
-                <input type="text" name="text" onChange={(e) => updateForm(e)} />
+            <label>{formState.category==="quote" ? "Author: " : "Punchline: "}
+                <input type="text" name="text2" onChange={(e) => updateForm(e)} />
             </label>
-            <input class="bouncy" type="submit" value="Submit" />
+            <input className="bouncy" type="submit" value="Submit" />
         </form>
     )
 }

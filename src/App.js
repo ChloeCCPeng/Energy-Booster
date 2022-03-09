@@ -38,7 +38,8 @@ function App() {
     .then((quote) => setSavedQuotes([...savedQuotes,quote]))
   }
 
-  function saveJoke(joke) {
+  function saveJoke(question, punchline) {
+    const joke = {question: question, punchline: punchline};
     fetch('http://localhost:4000/jokes', {
       method: 'POST',
       headers: {'Content-type': 'application/json'},
@@ -90,7 +91,7 @@ function App() {
           <InspirationalQuote saveQuote={saveQuote} />
         </Route>
         <Route exact path="/inputquote">
-          <InputQuote saveQuote={saveQuote} />
+          <InputQuote saveJoke={saveJoke} saveQuote={saveQuote} />
         </Route>
       </Switch>
     </div>
