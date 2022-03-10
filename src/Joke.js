@@ -1,14 +1,14 @@
-import React, {useState} from "react";
+import React from "react";
 
 function Joke ({joke, deleteJoke}) {
     const {id, question, punchline} = joke;
     const [showPunchline, setShowPunchline] = useState(false);
-
+  
     return (
         <div className="stickynotes">
             <i className='thumbtack' onClick={() => deleteJoke(id)}>📌</i>
-            <div onClick={() => setShowPunchline(!showPunchline)}>{`Setup: ${question}`}</div>
-            <p>{showPunchline ? `Punchline: ${punchline}` : ""}</p>
+            <p onClick={() => setShowPunchline(!showPunchline)}>{`Setup: ${question}`}</p>
+            <p>{showPunchline ? `Punchline: ${punchline}` : ""}</
         </div>
     )
 }

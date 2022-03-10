@@ -26,7 +26,7 @@ function InspirationalQuote({saveQuote}) {
         <div>
             {`${quote[0]} -${quote[1]}`}
             <button className="bouncy" onClick={()=>saveQuote(quote[0],quote[1])}>Save</button>
-            <button onClick={() => setNewButtonClick(!newButtonClick)}>New Quote</button>
+            <button onClick={() => setNewButtonClick(!newButtonClick)} className="bouncy" >New Quote</button>
 
         </div>
     )

@@ -13,8 +13,8 @@ function KanyeQuote({saveQuote}) {
     return (
         <div>
             {kanyeQuote}
-            <button className="bouncy" onClick={()=>saveQuote(kanyeQuote,"Kanye")}>Save</button>
-            <button onClick={() => setNewButtonClick(!newButtonClick)}>New Quote</button>
+            <button className="bouncy"  onClick={()=>saveQuote(kanyeQuote,"Kanye")}>Save</button>
+            <button onClick={() => setNewButtonClick(!newButtonClick)} className="bouncy" >New Quote</button>
         </div>
     )
 }
