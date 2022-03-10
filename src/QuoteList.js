@@ -6,8 +6,11 @@ function QuoteList({ savedQuotes, deleteQuote }) {
     return (
         <div>
             <h2>Quote List</h2>
-            {quotesJsx}
+            <div class="whiteboard-quote">
+                {quotesJsx}
+            </div>
         </div>
+ 
     )
 }
 
