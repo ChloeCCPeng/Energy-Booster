@@ -2,6 +2,7 @@
 import './App.css';
 import React, {useState, useEffect} from 'react';
 import { Route, Switch } from 'react-router-dom';
+// import styled, { ThemeProvider } from "styled-components";
 
 import DevJoke from './DevJoke';
 import InputQuote from './InputQuote';
@@ -72,14 +73,37 @@ function App() {
       setSavedJokes(updatedJokes);
     })
   }
+  //   const lightTheme = {
+  //     primary: "aliceblue",
+  //     color: "blue",
+  //     background: "white",
+  //   };
+    
+  //   const darkTheme = {
+  //     primary: "rebeccapurple",
+  //     color: "white",
+  //     background: "black",
+  //   };
+
+  //   const [theme, setTheme] = useState(darkTheme);
+  
+  //   function handleClick(){
+  //     setTheme((theme) => !theme);
+  // }
+  // const colorTheme = theme? darkTheme : lightTheme;
+
 
   return (
+    // <ThemeProvider theme={theme}>
     <div className="App">
       <NavBar />
       <Switch>
         <Route exact path="/">
-          <QuoteList savedQuotes={savedQuotes} deleteQuote={deleteQuote} />
-          <JokeList savedJokes={savedJokes} deleteJoke={deleteJoke} />
+          <div class="home-div">
+            <QuoteList savedQuotes={savedQuotes} deleteQuote={deleteQuote} class="home-quote-div"/>
+            <img src="./funny.gif" alt="funny" class="home-image"></img>
+            <JokeList savedJokes={savedJokes} deleteJoke={deleteJoke} class="home-joke-div"/>
+          </div>
         </Route>
         <Route exact path="/getjokes">
           <DevJoke saveJoke={saveJoke} />
@@ -95,6 +119,7 @@ function App() {
         </Route>
       </Switch>
     </div>
+    // </ThemeProvider>
   );
 }
 
