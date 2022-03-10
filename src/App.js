@@ -87,15 +87,19 @@ function App() {
         </Route>
         <Route exact path="/getjokes">
           <DevJoke saveJoke={saveJoke} />
+          <img src="./Monkey.png" alt="monkey"></img>
         </Route>
         <Route exact path="/kanyequote">
           <KanyeQuote saveQuote={saveQuote} />
+          <img src="./Monkey.png" alt="monkey"></img>
         </Route>
         <Route exact path="/inspirationalquote">
           <InspirationalQuote saveQuote={saveQuote} />
+          <img src="./Monkey.png" alt="monkey"></img>
         </Route>
         <Route exact path="/inputquote">
           <InputQuote saveJoke={saveJoke} saveQuote={saveQuote} />
+          <img src="./Monkey.png" alt="monkey"></img>
         </Route>
       </Switch>
     </div>
