@@ -6,9 +6,9 @@ function Joke ({joke, deleteJoke}) {
 
     return (
         <div className="stickynotes">
+            <i className='thumbtack' onClick={() => deleteJoke(id)}>📌</i>
             <div onClick={() => setShowPunchline(!showPunchline)}>{`Setup: ${question}`}</div>
             <p>{showPunchline ? `Punchline: ${punchline}` : ""}</p>
-            <button onClick={() => deleteJoke(id)}>Delete</button>
         </div>
     )
 }

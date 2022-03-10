@@ -4,8 +4,8 @@ function Quote ({quote, deleteQuote}) {
     const {id, text, author} = quote;
     return (
         <div className="stickynotes">
+            <i className='thumbtack' onClick={() => deleteQuote(id)}>📌</i>
             {`${text}- ${author}`}
-            <button onClick={() => deleteQuote(id)}>Delete</button>
         </div>
     )
 }
