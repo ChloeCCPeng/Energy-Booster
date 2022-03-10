@@ -1,19 +1,22 @@
+
+
+
 a {
   align-items: center;
   background-color: #fee6e3;
   border: 2px solid #111;
-  border-radius: 8px;
+  border-radius: 3px;
   box-sizing: border-box;
   color: #111;
   cursor: pointer;
   display: flex;
   font-family: Inter,sans-serif;
-  font-size: 16px;
-  height: 48px;
+  font-size: 10px;
+  height: 30px;
   justify-content: center;
-  line-height: 24px;
+  line-height: 20px;
   max-width: 100%;
-  padding: 0 25px;
+  padding: 25px;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -24,10 +27,10 @@ a {
 
 a:after {
   background-color: #111;
-  border-radius: 8px;
+  border-radius: 1px;
   content: "";
   display: block;
-  height: 48px;
+  height: 30px;
   left: 0;
   width: 100%;
   position: absolute;
@@ -41,23 +44,29 @@ a:hover:after {
   transform: translate(0, 0);
 }
 
-.button-56:active {
+a:active {
   background-color: #ffdeda;
   outline: 0;
 }
 
-.button-56:hover {
+a:hover {
   outline: 0;
 }
 
 @media (min-width: 768px) {
-  .button-56 {
+  a {
     padding: 0 40px;
   }
 }
 
-body {
+h2{
+  font-size: 45px;
+  margin: 0;
+}
 
+ @-webkit-keyframes h2 {0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+
+body {
   margin-top: 10;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -83,7 +92,7 @@ div{
 }
 
 div a {
-  font-size: 3vw; /* 20px */
+  font-size: 1.65vw; /* 20px */
   font-family: 'Luckiest Guy', cursive;
   letter-spacing: 0.02em;
   text-decoration-line: none;
@@ -105,38 +114,38 @@ div a {
   max-width: 350px;
   width: 30%;
   height: 30%;
-  margin: 25% 3% 3%;
+  margin: 10% 3% 3%;
 
 }
 
 
 .whiteboard-quote{
-  border: 7px solid rgb(134, 134, 134);
+  border: 5px solid rgb(134, 134, 134);
   background: #fff;
   box-shadow: rgba(3, 3, 3, 1) 35px 28px 25px -18px;
   box-sizing: border-box;
   border-radius: 15px;
   display: flex;
   flex-wrap: wrap;
-  width: 15em;
-  height: 11em;
+  width: 13em;
+  height: 10em;
   margin-left: 10px;
 }
 .whiteboard-joke{
-  border: 7px solid rgb(134, 134, 134);
+  border: 5px solid rgb(134, 134, 134);
   background: #fff;
   box-shadow: rgba(3, 3, 3, 1) 35px 28px 25px -18px;
   box-sizing: border-box;
   border-radius: 15px;
   display: flex;
   flex-wrap: wrap;
-  width: 15em;
-  height: 11em;
+  width: 13em;
+  height: 10em;
   right: 0;
 }
 /* stickynotes */
 .whiteboard-joke>div, .whiteboard-quote>div{
-  font-size: 7px;
+  font-size: 6px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -156,8 +165,6 @@ div a {
 }
 
 .bouncy{
-  font-size: 3vw; /* 20px */
-
 	animation-name: bouncy;
 	-webkit-animation-name: bouncy;	
 
@@ -239,3 +246,4 @@ input{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   width: 15%;
 } 
+

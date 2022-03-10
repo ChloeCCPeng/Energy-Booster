@@ -72,28 +72,8 @@ function App() {
       setSavedJokes(updatedJokes);
     })
   }
-  //   const lightTheme = {
-  //     primary: "aliceblue",
-  //     color: "blue",
-  //     background: "white",
-  //   };
-    
-  //   const darkTheme = {
-  //     primary: "rebeccapurple",
-  //     color: "white",
-  //     background: "black",
-  //   };
-
-  //   const [theme, setTheme] = useState(darkTheme);
-  
-  //   function handleClick(){
-  //     setTheme((theme) => !theme);
-  // }
-  // const colorTheme = theme? darkTheme : lightTheme;
-
 
   return (
-    // <ThemeProvider theme={theme}>
     <div className="App">
       <NavBar />
       <Switch>
@@ -118,7 +98,6 @@ function App() {
         </Route>
       </Switch>
     </div>
-    // </ThemeProvider>
   );
 }
 
