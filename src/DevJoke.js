@@ -14,8 +14,8 @@ function DevJoke({saveJoke}) {
         <div>
             <p>{`Setup: ${joke[0]}`}</p>
             <p>{`Punchline: ${joke[1]}`}</p>
-            <button onClick={()=> saveJoke(joke[0], joke[1])}>Save</button>
-            <button onClick={() => setButtonClick(!buttonClick)}>New Joke</button>
+            <button className="bouncy" onClick={()=> saveJoke(joke[0], joke[1])}>Save</button>
+            <button className="bouncy" onClick={() => setButtonClick(!buttonClick)}>New Joke</button>
         </div>
     )
 }
