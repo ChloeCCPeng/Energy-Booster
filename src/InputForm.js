@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-function InputQuote({saveQuote, saveJoke}) {
+function InputForm({saveQuote, saveJoke}) {
     const [formState, setFormState] = useState({category: "joke", text1: "", text2: ""});
     function submitHelper(e) {
         e.preventDefault();
@@ -24,7 +24,7 @@ function InputQuote({saveQuote, saveJoke}) {
             <label>Submit a quote or joke: </label>
             <br></br>
             <label>Type: 
-                <select name="category" onChange={(e) => updateForm(e)}>
+                <select className="bouncy" name="category" onChange={(e) => updateForm(e)}>
                     <option value="joke">Joke</option>
                     <option value="quote">Quote</option>
                 </select>
@@ -40,4 +40,4 @@ function InputQuote({saveQuote, saveJoke}) {
     )
 }
 
-export default InputQuote;
+export default InputForm;

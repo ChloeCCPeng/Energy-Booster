@@ -5,7 +5,7 @@ import { Route, Switch } from 'react-router-dom';
 // import styled, { ThemeProvider } from "styled-components";
 
 import DevJoke from './DevJoke';
-import InputQuote from './InputQuote';
+import InputForm from './InputForm';
 import InspirationalQuote from './InspirationalQuote';
 import JokeList from './JokeList';
 import KanyeQuote from './KanyeQuote';
@@ -97,8 +97,8 @@ function App() {
           <InspirationalQuote saveQuote={saveQuote} />
           <img src="./Monkey.png" alt="monkey"></img>
         </Route>
-        <Route exact path="/inputquote">
-          <InputQuote saveJoke={saveJoke} saveQuote={saveQuote} />
+        <Route exact path="/getcreative">
+          <InputForm saveJoke={saveJoke} saveQuote={saveQuote} />
           <img src="./Monkey.png" alt="monkey"></img>
         </Route>
       </Switch>

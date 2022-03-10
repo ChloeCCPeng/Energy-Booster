@@ -16,8 +16,8 @@ function NavBar() {
             <NavLink exact to="/kanyequote" activeStyle={{background: "gray"}} >
                 WWKanyeDo
             </NavLink>
-            <NavLink exact to="/inputquote" activeStyle={{background: "gray"}} >
-                Input Quote
+            <NavLink exact to="/getcreative" activeStyle={{background: "gray"}} >
+                Get Creative
             </NavLink>
         </div>
     )

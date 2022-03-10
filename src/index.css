@@ -112,9 +112,9 @@ div a {
 .home-image {
   position: relative; 
   max-width: 350px;
-  width: 30%;
+  width: 25%;
   height: 30%;
-  margin: 10% 3% 3%;
+  margin: 10% 0% 3%;
 
 }
 
@@ -128,8 +128,9 @@ div a {
   display: flex;
   flex-wrap: wrap;
   width: 13em;
-  height: 10em;
+  height: auto;
   margin-left: 10px;
+  background-image: url("../public/cork-background-9282805.jpeg");
 }
 .whiteboard-joke{
   border: 5px solid rgb(134, 134, 134);
@@ -140,17 +141,19 @@ div a {
   display: flex;
   flex-wrap: wrap;
   width: 13em;
-  height: 10em;
+  height: auto;
   right: 0;
+  background-image: url("../public/cork-background-9282805.jpeg");
 }
 /* stickynotes */
 .whiteboard-joke>div, .whiteboard-quote>div{
-  font-size: 6px;
+  font-size: 9px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 15em;
-  height: 15em;
+  height: auto;
+  min-height: 12em;
   background: rgb(250, 236, 158);
   box-shadow: 5px 5px 7px rgba(33,33,33,.7);
   transform: rotate(-4deg);
@@ -203,7 +206,7 @@ div a {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 5em;
+  width: auto;
 }
 
 .bouncy:hover {
@@ -236,6 +239,10 @@ div a {
 	100% {
 		-webkit-transform: rotate(-4deg);	
 	}				
+}
+
+.saved {
+  background-color: #fee6e3;
 }
 
 input{

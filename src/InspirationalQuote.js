@@ -4,6 +4,7 @@ import axios from "axios";
 function InspirationalQuote({saveQuote}) {
     const [quote, setQuote] = useState(["",""]);
     const [newButtonClick, setNewButtonClick] = useState(false);
+    const [saveButtonClick, setSaveButtonClick] = useState(false);
 
     const options = {
         method: 'GET',
@@ -22,11 +23,24 @@ function InspirationalQuote({saveQuote}) {
         });
     },[newButtonClick]);
 
+
+    function handleSave() {
+        if (!saveButtonClick) {
+            saveQuote(quote[0],quote[1]);
+            setSaveButtonClick(true);
+        }
+    }
+
+    function handleNew() {
+        setNewButtonClick(!newButtonClick);
+        setSaveButtonClick(false);
+    }
+
     return (
         <div>
             {`${quote[0]} -${quote[1]}`}
-            <button className="bouncy" onClick={()=>saveQuote(quote[0],quote[1])}>Save</button>
-            <button onClick={() => setNewButtonClick(!newButtonClick)} className="bouncy" >New Quote</button>
+            <button className={saveButtonClick ? "bouncy saved" : "bouncy" } onClick={handleSave}>{saveButtonClick ? "Saved" : "Save"}</button>
+            <button onClick={handleNew} className="bouncy">New Quote</button>
 
         </div>
     )
