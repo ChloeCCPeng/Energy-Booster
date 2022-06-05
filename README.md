@@ -19,12 +19,15 @@ A web application that randomly generates jokes and quotes
 
 #   Setup
 - Front-end:
-### npm i
-### npm start
+```
+npm i
+npm start
+```
 
 - Back-end:
-### npm i json-server
-### npm run server
-
+```
+npm i json-server
+npm run server
+```
 
 
