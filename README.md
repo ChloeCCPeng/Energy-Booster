@@ -12,7 +12,7 @@ A web application that randomly generates jokes and quotes
 #   Features 
 - Generate inspired quotes
 - generate funny dev jokes
-- Pin your favorite quotes and jokes to the cork board
+- Pin and unpin your favorite quotes and jokes to the cork board
 - Submit your own quote or joke
 
 #   Project Demo 
