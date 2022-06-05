@@ -1,10 +1,10 @@
 # Energy Booster
 
 # Table of Contents 
-*   Introduuction
-*   Features 
-*   Project Demo 
-*   Setup
+*   [Introduuction](#introduction)
+*   [Features](#features)
+*   [Project Demo](#project-demo)
+*   [Setup](#setup)
 
 #   Introduction
 A web application that randomly generates jokes and quotes
