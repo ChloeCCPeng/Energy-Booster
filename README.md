@@ -3,6 +3,7 @@
 # Table of Contents 
 *   [Introduuction](#introduction)
 *   [Features](#features)
+*   [Wireframe](#wireframe)
 *   [Project Demo](#project-demo)
 *   [Setup](#setup)
 
@@ -14,6 +15,9 @@ A web application that randomly generates jokes and quotes
 - generate funny dev jokes
 - Pin and unpin your favorite quotes and jokes to the cork board
 - Submit your own quote or joke
+
+#   Wireframe 
+![image](https://user-images.githubusercontent.com/61214246/172075916-61ef871e-1dd7-4e22-9a9b-13cc2808ecfc.png)
 
 #   Project Demo 
 
@@ -29,5 +33,3 @@ npm start
 npm i json-server
 npm run server
 ```
-
-
