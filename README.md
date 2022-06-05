@@ -18,13 +18,13 @@ A web application that randomly generates jokes and quotes
 #   Project Demo 
 
 #   Setup
-- Front-end:
+- To run front-end:
 ```
 npm i
 npm start
 ```
 
-- Back-end:
+- To run back-end:
 ```
 npm i json-server
 npm run server
