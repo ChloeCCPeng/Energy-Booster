@@ -1,4 +1,5 @@
 # Energy Booster
+*Created by: Molly McDonough, and Chloe Peng* 
 
 # Table of Contents 
 *   [Introduction](#introduction)
