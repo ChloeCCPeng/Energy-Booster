@@ -114,7 +114,7 @@ div a {
   max-width: 350px;
   width: 25%;
   height: 30%;
-  margin: 10% 0% 3%;
+  margin: 10% 3% 3%;
 
 }
 
@@ -157,7 +157,8 @@ div a {
   background: rgb(250, 236, 158);
   box-shadow: 5px 5px 7px rgba(33,33,33,.7);
   transform: rotate(-4deg);
-  padding: 0.5em 0.5em 0.5em
+  padding: 0.5em 0.5em 0.5em;
+  margin-left: 3px;
 }
 
 .whiteboard-joke>div:hover, .whiteboard-joke>div:focus, .whiteboard-quote>div:hover, .whiteboard-quote>div:focus{
