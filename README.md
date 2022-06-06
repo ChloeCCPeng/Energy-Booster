@@ -1,5 +1,6 @@
 # Energy Booster
 *Created by: Molly McDonough and Chloe Peng* 
+<img width="1400" alt="image" src="https://user-images.githubusercontent.com/61214246/172256711-e528fead-743b-4519-ad65-442070bb1809.png">
 
 # Table of Contents 
 *   [Introduction](#introduction)
