@@ -1,7 +1,7 @@
 # Energy Booster
 
 # Table of Contents 
-*   [Introduuction](#introduction)
+*   [Introduction](#introduction)
 *   [Features](#features)
 *   [Wireframe](#wireframe)
 *   [Project Demo](#project-demo)
