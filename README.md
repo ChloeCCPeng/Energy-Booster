@@ -1,6 +1,7 @@
 # Energy Booster
 *Created by: Molly McDonough and Chloe Peng* 
 <img width="1400" alt="image" src="https://user-images.githubusercontent.com/61214246/172256711-e528fead-743b-4519-ad65-442070bb1809.png">
+(https://www.youtube.com/watch?v=3Yupjl9KATE&t=19s&ab_channel=ChloePeng)
 
 # Table of Contents 
 *   [Introduction](#introduction)
@@ -23,6 +24,9 @@ A web application that randomly generates jokes and quotes
 
 #   Project Demo 
 <script src="https://www.youtube.com/watch?v=3Yupjl9KATE&t=19s&ab_channel=ChloePeng"></script>
+[![Energy Booster](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=3Yupjl9KATE&t=19s&ab_channel=ChloePeng)
+Source:stackoverflow.com
+
 
 #   Setup
 - To run front-end:
