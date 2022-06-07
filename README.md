@@ -23,13 +23,7 @@ A web application that randomly generates jokes and quotes
 ![image](https://user-images.githubusercontent.com/61214246/172075916-61ef871e-1dd7-4e22-9a9b-13cc2808ecfc.png)
 
 #   Project Demo 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3Yupjl9KATE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-    <iframe width="560" height="315"
-src="https://www.youtube.com/embed/MUQfKFzIOeU" 
-frameborder="0" 
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
+[![Energy Booster](https://user-images.githubusercontent.com/61214246/172256711-e528fead-743b-4519-ad65-442070bb1809.png)](https://www.youtube.com/watch?v=3Yupjl9KATE&t=19s&ab_channel=ChloePeng)
 
 #   Setup
 - To run front-end:
