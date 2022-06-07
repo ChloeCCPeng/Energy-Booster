@@ -1,8 +1,9 @@
 # Energy Booster
+*Created by: Molly McDonough and Chloe Peng* 
 
 #   Click for Project Demo 
 [![Energy Booster](https://user-images.githubusercontent.com/61214246/172256711-e528fead-743b-4519-ad65-442070bb1809.png)](https://www.youtube.com/watch?v=3Yupjl9KATE&t=19s&ab_channel=ChloePeng)
-*Created by: Molly McDonough and Chloe Peng* 
+
 
 # Table of Contents 
 *   [Project Demo](#click-for-project-demo)
